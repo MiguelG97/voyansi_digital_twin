@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		248D8A492CAA3B1A004BB682 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 248D8A482CAA3B1A004BB682 /* ComposableArchitecture */; };
+		24918F112CA72A8200DE33CF /* login_screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24918F102CA72A8200DE33CF /* login_screen.swift */; };
+		24918F152CA72B4000DE33CF /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24918F142CA72B4000DE33CF /* colors.swift */; };
+		24918F192CA7331400DE33CF /* layout_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24918F182CA7331400DE33CF /* layout_view.swift */; };
+		24918F1E2CA7916600DE33CF /* layout_sice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24918F1D2CA7916600DE33CF /* layout_sice.swift */; };
 		24C241D72C9BE34B0086F8F9 /* voyansiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C241D62C9BE34B0086F8F9 /* voyansiApp.swift */; };
-		24C241D92C9BE34B0086F8F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C241D82C9BE34B0086F8F9 /* ContentView.swift */; };
+		24C241D92C9BE34B0086F8F9 /* main_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C241D82C9BE34B0086F8F9 /* main_view.swift */; };
 		24C241DB2C9BE3500086F8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C241DA2C9BE3500086F8F9 /* Assets.xcassets */; };
 		24C241DE2C9BE3500086F8F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C241DD2C9BE3500086F8F9 /* Preview Assets.xcassets */; };
+		24DD46882CA8D4C800331D9D /* vlaunch_screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DD46872CA8D4C800331D9D /* vlaunch_screen.storyboard */; };
+		24DD468A2CA8DC8A00331D9D /* launch_screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD46892CA8DC8900331D9D /* launch_screen.swift */; };
+		24DD468E2CA8E5E400331D9D /* circular_loading_indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD468D2CA8E5E400331D9D /* circular_loading_indicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24918F102CA72A8200DE33CF /* login_screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_screen.swift; sourceTree = "<group>"; };
+		24918F142CA72B4000DE33CF /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		24918F182CA7331400DE33CF /* layout_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = layout_view.swift; sourceTree = "<group>"; };
+		24918F1D2CA7916600DE33CF /* layout_sice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = layout_sice.swift; sourceTree = "<group>"; };
 		24C241D32C9BE34B0086F8F9 /* voyansi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voyansi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C241D62C9BE34B0086F8F9 /* voyansiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voyansiApp.swift; sourceTree = "<group>"; };
-		24C241D82C9BE34B0086F8F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24C241D82C9BE34B0086F8F9 /* main_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_view.swift; sourceTree = "<group>"; };
 		24C241DA2C9BE3500086F8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C241DD2C9BE3500086F8F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		24DD46872CA8D4C800331D9D /* vlaunch_screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = vlaunch_screen.storyboard; sourceTree = "<group>"; };
+		24DD46892CA8DC8900331D9D /* launch_screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launch_screen.swift; sourceTree = "<group>"; };
+		24DD468D2CA8E5E400331D9D /* circular_loading_indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circular_loading_indicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +41,111 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248D8A492CAA3B1A004BB682 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24918F092CA72A3500DE33CF /* core */ = {
+			isa = PBXGroup;
+			children = (
+				24DD468C2CA8E5BC00331D9D /* shared */,
+				24DD468B2CA8E5B200331D9D /* layouts */,
+				24918F162CA732FD00DE33CF /* utils */,
+				24918F132CA72A9800DE33CF /* theme */,
+				24DD46872CA8D4C800331D9D /* vlaunch_screen.storyboard */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		24918F0A2CA72A3C00DE33CF /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				24C241D82C9BE34B0086F8F9 /* main_view.swift */,
+				24918F0B2CA72A4300DE33CF /* auth */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		24918F0B2CA72A4300DE33CF /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				24918F0D2CA72A6000DE33CF /* domain */,
+				24918F0C2CA72A4900DE33CF /* presentation */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		24918F0C2CA72A4900DE33CF /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				24918F122CA72A8D00DE33CF /* controllers */,
+				24918F0F2CA72A6B00DE33CF /* components */,
+				24918F0E2CA72A6600DE33CF /* screens */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		24918F0D2CA72A6000DE33CF /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		24918F0E2CA72A6600DE33CF /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				24918F102CA72A8200DE33CF /* login_screen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		24918F0F2CA72A6B00DE33CF /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		24918F122CA72A8D00DE33CF /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		24918F132CA72A9800DE33CF /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				24918F142CA72B4000DE33CF /* colors.swift */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		24918F162CA732FD00DE33CF /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				24DD46892CA8DC8900331D9D /* launch_screen.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		24918F1F2CA7918500DE33CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		24C241CA2C9BE34B0086F8F9 = {
 			isa = PBXGroup;
 			children = (
 				24C241D52C9BE34B0086F8F9 /* voyansi */,
 				24C241D42C9BE34B0086F8F9 /* Products */,
+				24918F1F2CA7918500DE33CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +160,9 @@
 		24C241D52C9BE34B0086F8F9 /* voyansi */ = {
 			isa = PBXGroup;
 			children = (
+				24918F0A2CA72A3C00DE33CF /* modules */,
+				24918F092CA72A3500DE33CF /* core */,
 				24C241D62C9BE34B0086F8F9 /* voyansiApp.swift */,
-				24C241D82C9BE34B0086F8F9 /* ContentView.swift */,
 				24C241DA2C9BE3500086F8F9 /* Assets.xcassets */,
 				24C241DC2C9BE3500086F8F9 /* Preview Content */,
 			);
@@ -65,6 +175,23 @@
 				24C241DD2C9BE3500086F8F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24DD468B2CA8E5B200331D9D /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				24918F182CA7331400DE33CF /* layout_view.swift */,
+				24918F1D2CA7916600DE33CF /* layout_sice.swift */,
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		24DD468C2CA8E5BC00331D9D /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				24DD468D2CA8E5E400331D9D /* circular_loading_indicator.swift */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +210,9 @@
 			dependencies = (
 			);
 			name = voyansi;
+			packageProductDependencies = (
+				248D8A482CAA3B1A004BB682 /* ComposableArchitecture */,
+			);
 			productName = voyansi;
 			productReference = 24C241D32C9BE34B0086F8F9 /* voyansi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 24C241CA2C9BE34B0086F8F9;
+			packageReferences = (
+				248D8A472CAA3B1A004BB682 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 24C241D42C9BE34B0086F8F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24DD46882CA8D4C800331D9D /* vlaunch_screen.storyboard in Resources */,
 				24C241DE2C9BE3500086F8F9 /* Preview Assets.xcassets in Resources */,
 				24C241DB2C9BE3500086F8F9 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C241D92C9BE34B0086F8F9 /* ContentView.swift in Sources */,
+				24C241D92C9BE34B0086F8F9 /* main_view.swift in Sources */,
+				24918F152CA72B4000DE33CF /* colors.swift in Sources */,
+				24DD468E2CA8E5E400331D9D /* circular_loading_indicator.swift in Sources */,
 				24C241D72C9BE34B0086F8F9 /* voyansiApp.swift in Sources */,
+				24918F192CA7331400DE33CF /* layout_view.swift in Sources */,
+				24DD468A2CA8DC8A00331D9D /* launch_screen.swift in Sources */,
+				24918F1E2CA7916600DE33CF /* layout_sice.swift in Sources */,
+				24918F112CA72A8200DE33CF /* login_screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +418,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = vlaunch_screen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,6 +428,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miguelg97.voyansi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,6 +452,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = vlaunch_screen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +462,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miguelg97.voyansi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,6 +494,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		248D8A472CAA3B1A004BB682 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		248D8A482CAA3B1A004BB682 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 248D8A472CAA3B1A004BB682 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24C241CB2C9BE34B0086F8F9 /* Project object */;
 }
