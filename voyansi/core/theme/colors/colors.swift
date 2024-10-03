@@ -12,6 +12,8 @@ extension Color{
 }
 
 struct VTheme{
-    let bg: Color = Color("v_bg")
     let primary: Color = Color("v_primary")
+    let bg: Color = Color("v_bg")
+    let bg_100: Color = Color("v_bg_100")
+    let icons: Color = Color("v_icons")
 }
