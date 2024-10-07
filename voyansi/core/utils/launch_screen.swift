@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct LaunchScreen: View {
-    var props: LayoutProps
+    @Environment(\.layoutprops) var layoutprops: LayoutProps
     var body: some View {
         ZStack {
             Color.vtheme.bg.ignoresSafeArea()
             
-            if(!props.isIpad && !props.isLandScape){
+            if(!layoutprops.isIpad && !layoutprops.isLandScape){
                 Image("logo").resizable().aspectRatio(contentMode: .fit)
             }
             else{
@@ -22,7 +22,7 @@ struct LaunchScreen: View {
             
             
             VCircularIndicator()
-                .offset(y: props.size.height * 0.25)
+                .offset(y: layoutprops.size.height * 0.25)
             
             
         }
@@ -31,5 +31,5 @@ struct LaunchScreen: View {
 }
 
 #Preview {
-    LaunchScreen(props: LayoutProps(isLandScape: false, isIpad: false, size: CGSize(width: 400, height: 759)))
+    LaunchScreen()
 }

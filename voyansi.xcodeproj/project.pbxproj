@@ -19,6 +19,14 @@
 		24DD46882CA8D4C800331D9D /* vlaunch_screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DD46872CA8D4C800331D9D /* vlaunch_screen.storyboard */; };
 		24DD468A2CA8DC8A00331D9D /* launch_screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD46892CA8DC8900331D9D /* launch_screen.swift */; };
 		24DD468E2CA8E5E400331D9D /* circular_loading_indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DD468D2CA8E5E400331D9D /* circular_loading_indicator.swift */; };
+		24E729942CB31A9F000E917C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E729932CB31A9F000E917C /* extensions.swift */; };
+		24F21E3F2CB358B200E0DD08 /* custom_spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F21E3E2CB358B200E0DD08 /* custom_spacer.swift */; };
+		24F66BA92CAF18DD00D02F76 /* text_field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F66BA82CAF18DD00D02F76 /* text_field.swift */; };
+		24F66BAD2CAF397E00D02F76 /* Geist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24F66BAC2CAF397E00D02F76 /* Geist-Regular.ttf */; };
+		24F66BB52CAF3DC800D02F76 /* Geist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24F66BB12CAF3DC700D02F76 /* Geist-Bold.ttf */; };
+		24F66BB62CAF3DC800D02F76 /* Geist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24F66BB22CAF3DC700D02F76 /* Geist-Medium.ttf */; };
+		24F66BB72CAF3DC800D02F76 /* Geist-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24F66BB32CAF3DC800D02F76 /* Geist-Light.ttf */; };
+		24F66BB82CAF3DC800D02F76 /* Geist-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24F66BB42CAF3DC800D02F76 /* Geist-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,15 @@
 		24DD46872CA8D4C800331D9D /* vlaunch_screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = vlaunch_screen.storyboard; sourceTree = "<group>"; };
 		24DD46892CA8DC8900331D9D /* launch_screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launch_screen.swift; sourceTree = "<group>"; };
 		24DD468D2CA8E5E400331D9D /* circular_loading_indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circular_loading_indicator.swift; sourceTree = "<group>"; };
+		24E729932CB31A9F000E917C /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		24F21E3E2CB358B200E0DD08 /* custom_spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_spacer.swift; sourceTree = "<group>"; };
+		24F66BA82CAF18DD00D02F76 /* text_field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = text_field.swift; sourceTree = "<group>"; };
+		24F66BAC2CAF397E00D02F76 /* Geist-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-Regular.ttf"; sourceTree = "<group>"; };
+		24F66BAE2CAF3B2E00D02F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24F66BB12CAF3DC700D02F76 /* Geist-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-Bold.ttf"; sourceTree = "<group>"; };
+		24F66BB22CAF3DC700D02F76 /* Geist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-Medium.ttf"; sourceTree = "<group>"; };
+		24F66BB32CAF3DC800D02F76 /* Geist-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-Light.ttf"; sourceTree = "<group>"; };
+		24F66BB42CAF3DC800D02F76 /* Geist-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +72,6 @@
 				24DD468B2CA8E5B200331D9D /* layouts */,
 				24918F162CA732FD00DE33CF /* utils */,
 				24918F132CA72A9800DE33CF /* theme */,
-				24DD46872CA8D4C800331D9D /* vlaunch_screen.storyboard */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -120,7 +136,8 @@
 		24918F132CA72A9800DE33CF /* theme */ = {
 			isa = PBXGroup;
 			children = (
-				24918F142CA72B4000DE33CF /* colors.swift */,
+				24F66BAB2CAF395600D02F76 /* colors */,
+				24F66BAA2CAF395000D02F76 /* fonts */,
 			);
 			path = theme;
 			sourceTree = "<group>";
@@ -128,7 +145,8 @@
 		24918F162CA732FD00DE33CF /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				24DD46892CA8DC8900331D9D /* launch_screen.swift */,
+				24E729952CB31AA8000E917C /* extensions */,
+				24E729922CB31A61000E917C /* launch_app */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -160,6 +178,7 @@
 		24C241D52C9BE34B0086F8F9 /* voyansi */ = {
 			isa = PBXGroup;
 			children = (
+				24F66BAE2CAF3B2E00D02F76 /* Info.plist */,
 				24918F0A2CA72A3C00DE33CF /* modules */,
 				24918F092CA72A3500DE33CF /* core */,
 				24C241D62C9BE34B0086F8F9 /* voyansiApp.swift */,
@@ -190,8 +209,47 @@
 			isa = PBXGroup;
 			children = (
 				24DD468D2CA8E5E400331D9D /* circular_loading_indicator.swift */,
+				24F66BA82CAF18DD00D02F76 /* text_field.swift */,
+				24F21E3E2CB358B200E0DD08 /* custom_spacer.swift */,
 			);
 			path = shared;
+			sourceTree = "<group>";
+		};
+		24E729922CB31A61000E917C /* launch_app */ = {
+			isa = PBXGroup;
+			children = (
+				24DD46872CA8D4C800331D9D /* vlaunch_screen.storyboard */,
+				24DD46892CA8DC8900331D9D /* launch_screen.swift */,
+			);
+			name = launch_app;
+			sourceTree = "<group>";
+		};
+		24E729952CB31AA8000E917C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24E729932CB31A9F000E917C /* extensions.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		24F66BAA2CAF395000D02F76 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				24F66BB12CAF3DC700D02F76 /* Geist-Bold.ttf */,
+				24F66BB32CAF3DC800D02F76 /* Geist-Light.ttf */,
+				24F66BB22CAF3DC700D02F76 /* Geist-Medium.ttf */,
+				24F66BB42CAF3DC800D02F76 /* Geist-SemiBold.ttf */,
+				24F66BAC2CAF397E00D02F76 /* Geist-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		24F66BAB2CAF395600D02F76 /* colors */ = {
+			isa = PBXGroup;
+			children = (
+				24918F142CA72B4000DE33CF /* colors.swift */,
+			);
+			path = colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +316,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F66BB62CAF3DC800D02F76 /* Geist-Medium.ttf in Resources */,
+				24F66BAD2CAF397E00D02F76 /* Geist-Regular.ttf in Resources */,
 				24DD46882CA8D4C800331D9D /* vlaunch_screen.storyboard in Resources */,
 				24C241DE2C9BE3500086F8F9 /* Preview Assets.xcassets in Resources */,
+				24F66BB72CAF3DC800D02F76 /* Geist-Light.ttf in Resources */,
 				24C241DB2C9BE3500086F8F9 /* Assets.xcassets in Resources */,
+				24F66BB82CAF3DC800D02F76 /* Geist-SemiBold.ttf in Resources */,
+				24F66BB52CAF3DC800D02F76 /* Geist-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +336,12 @@
 			files = (
 				24C241D92C9BE34B0086F8F9 /* main_view.swift in Sources */,
 				24918F152CA72B4000DE33CF /* colors.swift in Sources */,
+				24F66BA92CAF18DD00D02F76 /* text_field.swift in Sources */,
 				24DD468E2CA8E5E400331D9D /* circular_loading_indicator.swift in Sources */,
 				24C241D72C9BE34B0086F8F9 /* voyansiApp.swift in Sources */,
+				24E729942CB31A9F000E917C /* extensions.swift in Sources */,
 				24918F192CA7331400DE33CF /* layout_view.swift in Sources */,
+				24F21E3F2CB358B200E0DD08 /* custom_spacer.swift in Sources */,
 				24DD468A2CA8DC8A00331D9D /* launch_screen.swift in Sources */,
 				24918F1E2CA7916600DE33CF /* layout_sice.swift in Sources */,
 				24918F112CA72A8200DE33CF /* login_screen.swift in Sources */,
@@ -415,12 +481,17 @@
 				DEVELOPMENT_TEAM = 9456J83U89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = voyansi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Preview3D;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = vlaunch_screen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,12 +520,17 @@
 				DEVELOPMENT_TEAM = 9456J83U89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = voyansi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Preview3D;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = vlaunch_screen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

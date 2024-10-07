@@ -12,6 +12,8 @@ struct voyansiApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environment(\.font, .custom("Geist-Regular", size: 17))
         }
+        .environment(\.font, .custom("Geist-Regular", size: 17))
     }
 }

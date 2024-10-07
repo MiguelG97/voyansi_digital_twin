@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
-        LayoutView { props in
-//            LoginScreen()
-            LaunchScreen(props:props)
+        LayoutView { 
+            LoginScreen()
+//            LaunchScreen()
         }
     }
+        
 }
 
 #Preview {
