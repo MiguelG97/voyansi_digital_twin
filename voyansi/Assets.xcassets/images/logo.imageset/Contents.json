@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "hexagon_voyansi_light.png",
       "idiom" : "universal"
     },
     {
@@ -11,7 +10,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "hexagon_voyansi_dark.png",
+      "filename" : "hexagon_voyansi_light.png",
       "idiom" : "universal"
     },
     {
@@ -21,6 +20,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "hexagon_voyansi_dark.png",
       "idiom" : "universal"
     }
   ],
